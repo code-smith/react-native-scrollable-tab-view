@@ -25,6 +25,8 @@ DIY
 ## Basic usage
 check examples folder, its almost the same, there are no changes in how you're going to use it.
 As Examples provided dont use a custom component to log mouting and redering,I have included a Contianer Component to log mounting and updating as a proof for for lazy loading
+#note
+Android renders the component 3 times initially(not sure why??) ,so you see one log for mouting initial tab and 2 logs for updating tabs
 
 ## Contribution
 **Issues** are welcome. Please add a screenshot of bug and code snippet. Quickest way to solve issue is to reproduce it on one of the examples.
