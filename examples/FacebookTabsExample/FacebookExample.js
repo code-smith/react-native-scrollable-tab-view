@@ -8,6 +8,7 @@ import {
 
 import FacebookTabBar from './FacebookTabBar';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
+import Container from './container.js'
 
 export default React.createClass({
   render() {
@@ -16,31 +17,31 @@ export default React.createClass({
       initialPage={1}
       renderTabBar={() => <FacebookTabBar />}
       >
-      <ScrollView tabLabel="ios-paper" style={styles.tabView}>
+      <Container tabLabel="ios-paper" style={styles.tabView}>
         <View style={styles.card}>
           <Text>News</Text>
         </View>
-      </ScrollView>
-      <ScrollView tabLabel="ios-people" style={styles.tabView}>
+      </Container>
+      <Container tabLabel="ios-people" style={styles.tabView}>
         <View style={styles.card}>
           <Text>Friends</Text>
         </View>
-      </ScrollView>
-      <ScrollView tabLabel="ios-chatboxes" style={styles.tabView}>
+      </Container>
+      <Container tabLabel="ios-chatboxes" style={styles.tabView}>
         <View style={styles.card}>
           <Text>Messenger</Text>
         </View>
-      </ScrollView>
-      <ScrollView tabLabel="ios-notifications" style={styles.tabView}>
+      </Container>
+      <Container tabLabel="ios-notifications" style={styles.tabView}>
         <View style={styles.card}>
           <Text>Notifications</Text>
         </View>
-      </ScrollView>
-      <ScrollView tabLabel="ios-list" style={styles.tabView}>
+      </Container>
+      <Container tabLabel="ios-list" style={styles.tabView}>
         <View style={styles.card}>
           <Text>Other nav</Text>
         </View>
-      </ScrollView>
+      </Container>
     </ScrollableTabView>
   },
 });

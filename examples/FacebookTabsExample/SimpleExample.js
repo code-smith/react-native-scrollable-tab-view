@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
+import Container from './container.js'
 
 export default React.createClass({
   render() {
@@ -11,9 +12,15 @@ export default React.createClass({
       style={{marginTop: 20, }}
       renderTabBar={() => <DefaultTabBar />}
     >
-      <Text tabLabel='Tab #1'>My</Text>
-      <Text tabLabel='Tab #2'>favorite</Text>
-      <Text tabLabel='Tab #3'>project</Text>
+    <Container tabLabel='Tab #1'>
+      <Text >My</Text>
+    </Container>
+    <Container tabLabel='Tab #2'>
+      <Text >FAv</Text>
+    </Container>
+    <Container tabLabel='Tab #3'>
+      <Text >PRoject</Text>
+    </Container>
     </ScrollableTabView>;
   },
 });
