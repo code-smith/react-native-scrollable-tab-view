@@ -1,7 +1,7 @@
 ## react-native-scrollable-tab-view (lazy load)
 This is a feature built into the Awesome [react-native-scrollable-tab-view component](https://github.com/skv-headless/react-native-scrollable-tab-view)
 
-I have it as a fork and made a pull request###,if approved great, else you guys can use it from here.
+I have it as a fork and made a [pull request 303](https://github.com/skv-headless/react-native-scrollable-tab-view/pull/303),if approved great, else you guys can use it from here.
 
 #Motivation:
 I really love the component that's available but there were two performance bottlenecks(may be its just for my use case, but i'm sure many share my pain)
@@ -12,7 +12,7 @@ I added changes so that tabs are mounted only when viewed for the first time.Thu
 
 2. Similary when ScrollableTabView component updates all the tabs are rendered. This again can get expensive, so made changes to only render tab is being selected/viewed.
 
-Both these changes are well tested on Android and i'm currently using it in my project.
+Both these changes are well tested on Android and iOS and i'm currently using it in my project.
 
 ## Add it to your project
 Download from git master branh and use it.
@@ -22,7 +22,8 @@ Replace the index.js file in react-native-scrollable-tab-view node modules with 
 ## Demo
 DIY
 
-## Basic usage
+;x
+:x
 check examples folder, its almost the same, there are no changes in how you're going to use it.
 As Examples provided dont use a custom component to log mouting and redering,I have included a Contianer Component to log mounting and updating as a proof for for lazy loading
 #note
