@@ -7,10 +7,10 @@ import {
 
 class Container extends Component{
   componentDidMount(){
-    console.warn("component mounted...")
+    console.warn(this.props.tabLabel+ " tab mounted...")
   }
   componentDidUpdate(){
-    console.warn("component updated...")
+    console.warn(this.props.tabLabel+ " tab updated...")
   }
   render(){
     return(
